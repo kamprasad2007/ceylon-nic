@@ -17,6 +17,18 @@
  * under the License.
  */
 var app = {
+    error : '',
+    profile : function(){
+        return {
+            gender : '',
+            dob : '',
+            bDate : '',
+            age : ''
+        }
+    },
+    setValues:function(){
+        document.getElementById('gender').html('M');
+    },
     // Application Constructor
     initialize: function() {
         this.bindEvents();
@@ -33,20 +45,10 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        // var parentElement = document.getElementById(id);
-        // var listeningElement = parentElement.querySelector('.listening');
-        // var receivedElement = parentElement.querySelector('.received');
-
-        //listeningElement.setAttribute('style', 'display:none;');
-        //receivedElement.setAttribute('style', 'display:block;');
-
-        console.log('Received Event: ' + id);
+        app.setValues();
     },
     validate : function(){
+        profile.gender = 'F';
         alert('hi');
     },
     scanBarcode : function(){

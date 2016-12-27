@@ -15,9 +15,25 @@
 </head>
 
 <body>
+    <div class="profile_img">
+            <img src="./img/1.png"/>
+    </div>
     <div class="main">
-        <img src="./img/1.png" />
         <input placeholder="NIC No" type="text" id="nic_no"/>
+        <button onclick="app.validate()">Go</button>
+        <button onclick="app.scanBarcode()">Scan</button>
+    </div>
+    <div class="detail">
+        <table>
+            <tr> 
+                <td><lable>Gender</lable></td><td><lable>M</lable></td> 
+                <td><lable>DOB</lable></td> <td><lable>01/12/1983</lable></td> 
+            </tr>
+              <tr> 
+                <td><lable>Age</lable></td><td><lable>33</lable></td> 
+                <td><lable>Birth Date</lable></td> <td><lable>Tuesday</lable></td> 
+            </tr>
+        </table>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>

@@ -45,5 +45,11 @@ var app = {
         //receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    },
+    validate : function(){
+        alert('hi');
+    },
+    scanBarcode : function(){
+
     }
 };
